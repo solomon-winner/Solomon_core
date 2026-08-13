@@ -3,10 +3,10 @@
 import { Terminal, Cpu } from "lucide-react";
 
 const navItems = [
-  { index: "01", label: "NUCLEUS", section: "nucleus" },
-  { index: "02", label: "PROJECTS", section: "projects" },
-  { index: "03", label: "SKILLS", section: "skills" },
-  { index: "04", label: "SYSTEM_STATS", section: "system" },
+  // { index: "01", label: "NUCLEUS", section: "nucleus" },
+  { index: "01", label: "PROJECTS", section: "projects" },
+  // { index: "03", label: "SKILLS", section: "skills" },
+  { index: "02", label: "Exprience", section: "system" },
 ];
 
 interface HeaderProps {
@@ -31,7 +31,7 @@ export default function Header({
             SOLOMON_CORE
           </span>
           <span className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest mt-1">
-            v2.0_STABLE
+            No junky!
           </span>
         </div>
       </button>
@@ -58,7 +58,7 @@ export default function Header({
       <div className="flex items-center gap-6">
         <div className="hidden xl:flex items-center gap-2 px-4 py-2 technical-chip rounded-full">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-[10px] font-mono">UPLINK_ACTIVE</span>
+          <span className="text-[10px] font-mono">Open to work</span>
         </div>
         <button className="text-on-surface-variant hover:text-primary transition-colors p-2">
           <Cpu className="w-5 h-5" />

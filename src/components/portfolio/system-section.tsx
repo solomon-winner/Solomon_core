@@ -1,48 +1,95 @@
 "use client";
 
 import { Rocket } from "lucide-react";
+import Link from "next/link";
 
-const timelineEntries = [
+const timelineEntries =// [
+  // {
+  //   id: 1,
+  //   period: "2022 — PRESENT",
+  //   title: "Lead Systems Architect @ CloudScale",
+  //   image:
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuBCN7_WBlNgZ5J9V_25XPgozk_WYIPePVTZxf-ehqRrZGXjigOBdDbq_4DkmNoRRFDg_-62pLIQgWn9I5ih2rxOVXuCVVYfeMrG-MTl4nCipOomM442Gb80hagjkk7CRuTFWr8iqnx7Xg6s-Y-t2PZcyg_gcbuWDY8U6WWk6Hr4A-FOITmZv169F-KyqSszauS7I8VM5qgUHqk3LwkzLli666i0PzioqGy0YBQvoZYE3I5rWe4RnYOu0efqB8Ol-O7o8aLF5KCkNBY",
+  //   imageAlt: "Futuristic data center",
+  //   accent: "primary" as const,
+  //   wins: [
+  //     "Orchestrated migration of 500+ microservices to a serverless architecture, reducing latency by 40%.",
+  //     "Implemented a custom distributed tracing layer using OpenTelemetry and ClickHouse for real-time observability.",
+  //   ],
+  // },
+  // {
+  //   id: 2,
+  //   period: "2020 — 2022",
+  //   title: "AI Engineer @ NeuralPath",
+  //   image:
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuBhpV7qKM9wiLznhZIUrot5WjWecPxyDyeVqyRU9E-lYixvbJ9k_QBEg-M_8f101_JIhsVwwH9SOo95XuITbUJm3sHQ7UXDuLOASYzEejZ-w3ZZ3XGh_ImaW6d_2g7gG1OHze66l3crGm3GjDWPpV72bOjoY08x2ndwXioXK2zbU_aY120p8xbJv-w7ngf-8UJbFl2es12k7sI-pT2vQiybgqQP1oWEOLd994bPxaFt8e1voLdYeEl84DrS236X-KYZgGDNJ8hC_iA",
+  //   imageAlt: "Neural network visualization",
+  //   accent: "secondary" as const,
+  //   wins: [
+  //     "Designed and deployed a proprietary RAG (Retrieval-Augmented Generation) pipeline for enterprise legal analysis.",
+  //     "Optimized LLM inference times by 60% through custom quantization techniques and TensorRT integration.",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   period: "2018 — 2020",
+  //   title: "Full-Stack Dev @ WebNexus",
+  //   image:
+  //     "https://lh3.googleusercontent.com/aida-public/AB6AXuB_b1QiSqq-B6iqqrAsYwTRH4hD_7jG8RjFRUJZsl9buGBJFkQrJJGz7d96ntdFbXpyk9ymfnmUQnRS8SQ_miohTvrogv4JN_Yphk6o8oa-NKYKzdRNH-uuvhRVuA_KnUiX0ia1F9fV62q76q0RtIqBlPyOPjvx8owGDEg_KSIYNbe_9OjpBN56sDQsA1kSZSUIn2cDfE5bXfEMJEK8ygqaJcWiZ1Bk-8rB_enEDv1KRqBrBjEs8QvVWs4Dxas-xJsfWqenC6PnWhA",
+  //   imageAlt: "Code editor",
+  //   accent: "primary" as const,
+  //   wins: [
+  //     "Developed a high-performance React component library used across 12 distinct product lines.",
+  //     "Engineered a real-time collaboration engine using WebSockets and CRDTs for seamless multi-user editing.",
+  //   ],
+  // },
+  
+//];
+
+[
   {
     id: 1,
-    period: "2022 — PRESENT",
-    title: "Lead Systems Architect @ CloudScale",
+    period: "2023 — 2024",
+    title: "Full Stack Software Developer @ Echnoserve",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBCN7_WBlNgZ5J9V_25XPgozk_WYIPePVTZxf-ehqRrZGXjigOBdDbq_4DkmNoRRFDg_-62pLIQgWn9I5ih2rxOVXuCVVYfeMrG-MTl4nCipOomM442Gb80hagjkk7CRuTFWr8iqnx7Xg6s-Y-t2PZcyg_gcbuWDY8U6WWk6Hr4A-FOITmZv169F-KyqSszauS7I8VM5qgUHqk3LwkzLli666i0PzioqGy0YBQvoZYE3I5rWe4RnYOu0efqB8Ol-O7o8aLF5KCkNBY",
+        "/echnoserve.png",
     imageAlt: "Futuristic data center",
     accent: "primary" as const,
     wins: [
-      "Orchestrated migration of 500+ microservices to a serverless architecture, reducing latency by 40%.",
-      "Implemented a custom distributed tracing layer using OpenTelemetry and ClickHouse for real-time observability.",
+      "Started my professional journey building impactful systems like TBRR and EUDR from the ground up.",
+      "Took ownership of the full stack — designing backend architectures and crafting intuitive frontend experiences.",
+      "Worked on real-world, high-impact solutions, transforming complex requirements into scalable, production-ready platforms.",
     ],
   },
   {
     id: 2,
-    period: "2020 — 2022",
-    title: "AI Engineer @ NeuralPath",
+    period: "2024 — 2026",
+    title: "Software Engineer @ Techbee Innovations",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBhpV7qKM9wiLznhZIUrot5WjWecPxyDyeVqyRU9E-lYixvbJ9k_QBEg-M_8f101_JIhsVwwH9SOo95XuITbUJm3sHQ7UXDuLOASYzEejZ-w3ZZ3XGh_ImaW6d_2g7gG1OHze66l3crGm3GjDWPpV72bOjoY08x2ndwXioXK2zbU_aY120p8xbJv-w7ngf-8UJbFl2es12k7sI-pT2vQiybgqQP1oWEOLd994bPxaFt8e1voLdYeEl84DrS236X-KYZgGDNJ8hC_iA",
+      "/TechBee.svg",
     imageAlt: "Neural network visualization",
     accent: "secondary" as const,
     wins: [
-      "Designed and deployed a proprietary RAG (Retrieval-Augmented Generation) pipeline for enterprise legal analysis.",
-      "Optimized LLM inference times by 60% through custom quantization techniques and TensorRT integration.",
+      "Stepped into building larger, business-critical systems — including a full ERP platform from scratch.",
+      "Brought ideas to life by developing '101 Drivers', a real-world platform serving users in California and Italy.",
+      "Focused on delivering reliable, scalable systems that operate across borders and support real users daily.",
     ],
   },
   {
     id: 3,
-    period: "2018 — 2020",
-    title: "Full-Stack Dev @ WebNexus",
+    period: "2025",
+    title: "AWS Certified Cloud Practitioner",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB_b1QiSqq-B6iqqrAsYwTRH4hD_7jG8RjFRUJZsl9buGBJFkQrJJGz7d96ntdFbXpyk9ymfnmUQnRS8SQ_miohTvrogv4JN_Yphk6o8oa-NKYKzdRNH-uuvhRVuA_KnUiX0ia1F9fV62q76q0RtIqBlPyOPjvx8owGDEg_KSIYNbe_9OjpBN56sDQsA1kSZSUIn2cDfE5bXfEMJEK8ygqaJcWiZ1Bk-8rB_enEDv1KRqBrBjEs8QvVWs4Dxas-xJsfWqenC6PnWhA",
-    imageAlt: "Code editor",
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBCN7_WBlNgZ5J9V_25XPgozk_WYIPePVTZxf-ehqRrZGXjigOBdDbq_4DkmNoRRFDg_-62pLIQgWn9I5ih2rxOVXuCVVYfeMrG-MTl4nCipOomM442Gb80hagjkk7CRuTFWr8iqnx7Xg6s-Y-t2PZcyg_gcbuWDY8U6WWk6Hr4A-FOITmZv169F-KyqSszauS7I8VM5qgUHqk3LwkzLli666i0PzioqGy0YBQvoZYE3I5rWe4RnYOu0efqB8Ol-O7o8aLF5KCkNBY",
+    imageAlt: "Cloud infrastructure",
     accent: "primary" as const,
     wins: [
-      "Developed a high-performance React component library used across 12 distinct product lines.",
-      "Engineered a real-time collaboration engine using WebSockets and CRDTs for seamless multi-user editing.",
+      "Expanded my expertise into cloud computing with AWS certification.",
+      "Gained a strong foundation in designing scalable, secure, and resilient cloud-based systems.",
+      "Bridging development and cloud, I build applications that are not just functional — but production-ready and future-proof.",
     ],
-  },
-];
+  }
+]
 
 export default function SystemSection() {
   return (
@@ -148,11 +195,17 @@ export default function SystemSection() {
             </div>
 
             <div className="w-full flex flex-col gap-4 mt-6">
-              <button className="w-full px-20 py-4 bg-primary-container text-on-primary font-mono text-sm uppercase tracking-[0.2em] hover:bg-primary hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.3)] rounded">
+              <Link
+                // onClick={() => window.open("mailto:solomonylew664", "_blank")}
+                href="mailto:solomonyalew664@gmail.com"
+                className="w-full px-20 py-4 bg-primary-container text-on-primary font-mono text-sm uppercase tracking-[0.2em] hover:bg-primary hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(0,242,255,0.3)] rounded"
+              >
                 Connect_Now
-              </button>
-              <button className="w-full px-20 py-4 border border-outline text-on-surface font-mono text-sm uppercase tracking-[0.2em] hover:bg-white/5 transition-all rounded">
-                View_Portfolio
+              </Link>
+              <button 
+              onClick={() => window.open("https://github.com/solomon-winner", "_blank")}
+              className="w-full px-20 py-4 border border-outline text-on-surface font-mono text-sm uppercase tracking-[0.2em] hover:bg-white/5 transition-all rounded">
+                View_Github
               </button>
             </div>
 
@@ -166,12 +219,12 @@ export default function SystemSection() {
                   OPEN_TO_SYNC
                 </p>
               </div>
-              <div className="text-left">
+              {/* <div className="text-left">
                 <p className="font-mono text-[10px] text-on-surface-variant uppercase">
                   Timezone
                 </p>
                 <p className="text-base text-on-surface">UTC-05:00</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </aside>

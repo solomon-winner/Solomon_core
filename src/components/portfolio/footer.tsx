@@ -11,14 +11,21 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             <Terminal className="w-5 h-5 text-primary" />
             <span className="font-mono text-sm text-on-surface uppercase tracking-widest">
-              ENGINEER_CORE_v2.0
+              SOLOMON_CORE
             </span>
           </div>
           <p className="font-mono text-xs text-on-surface-variant">
-            &copy; 2024 CORE_ARCHITECT | ALL SYSTEMS OPERATIONAL
+            &copy; 2026
           </p>
         </div>
 
+        {/* <div className="flex flex-col gap-2">
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-sm text-on-surface uppercase tracking-widest">
+            ክብር ለአብ ለወልድ ለመንፈስ ቅዱስ! አሜን!
+            </span>
+          </div>
+        </div> */}
         {/* Right: Links */}
         <div className="flex gap-20">
           <div className="flex flex-col gap-4">
@@ -27,21 +34,21 @@ export default function Footer() {
             </span>
             <div className="flex gap-6">
               <a
-                href="#"
+                href="https://github.com/solomon-winner"
                 aria-label="GitHub"
                 className="text-on-surface-variant hover:text-primary cursor-pointer transition-colors"
               >
                 <Terminal className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/solomon-yalew-86b03a257/"
                 aria-label="LinkedIn"
                 className="text-on-surface-variant hover:text-primary cursor-pointer transition-colors"
               >
                 <Link2 className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="mailto:solomonyalew664@gmail.com"
                 aria-label="Email"
                 className="text-on-surface-variant hover:text-primary cursor-pointer transition-colors"
               >
@@ -49,7 +56,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <span className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest">
               Navigation
             </span>
@@ -64,7 +71,7 @@ export default function Footer() {
                 CORE
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

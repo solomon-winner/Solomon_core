@@ -39,11 +39,11 @@ function ProjectOne() {
            NestJS with gRPC, the system enables efficient, real-time communication and supports scalable, evolving 
            business workflows. It handles core domains such as HR, Finance, Project management,POS, sales, assets, 
            supply chain management and role-based access control, with a strong emphasis on data integrity, 
-           reliability, and performance.        
-             </p>
-            <p className="text-base text-on-surface-variant leading-relaxed">
+           reliability, and performance.       
+             {/* </p>
+            <p className="text-base text-on-surface-variant leading-relaxed"> */}
 
-            I led the project end-to-end—from architecture design and technology selection 
+             I participate in the project end-to-end—from architecture design and technology selection 
             to full-stack implementation. Key decisions include adopting event-driven patterns 
             for asynchronous workflows and implementing fine-grained RBAC for secure multi-user 
             operations. The system is continuously improved based on real-world usage, reflecting 
@@ -75,8 +75,10 @@ export class TenantInterceptor implements NestInterceptor {
 }`}</code>
             </pre>
           </div>
-          <button className="group flex items-center gap-4 text-primary font-mono text-xs hover:gap-6 transition-all">
-            EXPLORE_DOCUMENTATION{" "}
+          <button 
+            onClick={() => window.open("https://techbee.techbee.et/", "_blank")}
+          className="group flex items-center gap-4 text-primary font-mono text-xs hover:gap-6 transition-all">
+            LIVE{" "}
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
@@ -95,7 +97,7 @@ export class TenantInterceptor implements NestInterceptor {
             <div className="absolute inset-0 p-6 flex flex-col justify-between">
               <div className="flex justify-between items-start">
                 <span className="font-mono text-[10px] text-primary/60 tracking-widest px-2 py-1 border border-primary/30 rounded">
-                  SYSTEM_ARCHITECTURE_v4.2
+                  Techbee ERP
                 </span>
                 <Maximize2 className="w-4 h-4 text-primary" />
               </div>
@@ -103,19 +105,19 @@ export class TenantInterceptor implements NestInterceptor {
                 <div className="flex items-center gap-6">
                   <div className="w-32 h-[1px] bg-primary/40" />
                   <span className="font-mono text-xs text-primary">
-                    INGRESS_CLUSTER
+                    TENANT AWARE
                   </span>
                 </div>
                 <div className="flex items-center gap-6 ml-12">
                   <div className="w-16 h-[1px] bg-primary/40" />
                   <span className="font-mono text-xs text-primary">
-                    COMPUTE_FABRIC
+                    MICRO SERVICE
                   </span>
                 </div>
                 <div className="flex items-center gap-6 ml-20">
                   <div className="w-8 h-[1px] bg-primary/40" />
                   <span className="font-mono text-xs text-primary">
-                    STATE_PERSISTENCE
+                    ABOVE 30 MODULES
                   </span>
                 </div>
               </div>
@@ -128,7 +130,7 @@ export class TenantInterceptor implements NestInterceptor {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Project 2 — Nexus Core ERP (reversed side-by-side)                */
+/*  Project 2 — 101 (reversed side-by-side)                */
 /* ------------------------------------------------------------------ */
 function ProjectTwo() {
   return (
@@ -182,7 +184,7 @@ function ProjectTwo() {
             101 Drivers
           </h2>
           <div className="flex flex-wrap gap-2">
-            {["React", "Socket.io", "Prisma", "PostgreSQL"].map(
+            {["React", "Socket.io", "Prisma", "PostgreSQL","stripe", "Google Maps"].map(
               (t) => (
                 <span
                   key={t}
@@ -194,15 +196,19 @@ function ProjectTwo() {
             )}
           </div>
           <p className="text-base text-on-surface-variant leading-relaxed">
-            Built 101 Drivers, a real-time multi-role delivery logistics platform connecting dealers, 
-            drivers, and admins through an event-driven WebSocket pipeline. Implemented Uber-style live GPS 
-            tracking with map rotation and booking delivery, 3-layer coordinate filtering, and exponential smoothing for smooth 
-            marker movement. Engineered the full delivery lifecycle — from quote and scheduling through driver 
-            assignment, live tracking with compliance checkpoints, to completion, payment processing, and driver payouts. 
-            Built role-specific interfaces (dealer dashboard, driver app with gig board and checklists, admin operations panel) 
-            works in USA california and Italy.
+           101 is a role-based system that connects drivers and dealers for work. 
+           Dealers register their cars and provide the pickup and drop-off addresses. 
+           The system calculates the price based on the pricing configuration assigned to 
+           the dealer and handles the payment through Stripe.
+           
+           The driver then sees available jobs in their driver app on their phone. 
+           Since the system already knows the driver’s location, it can show them jobs 
+           based on where they are. The driver books the job and starts driving, with live 
+           tracking powered by Google Maps. This allows both the dealer and the admin to see 
+           the driver’s location and track the trip in real time.
+           101 currently operates in California, USA, and Italy.
           </p>
-          <div className="grid grid-cols-2 gap-4">
+          {/* <div className="grid grid-cols-2 gap-4">
             <div className="glass-card p-4 rounded-lg">
               <span className="text-[10px] font-mono text-on-surface-variant block mb-1">
                 LATENCY_P99
@@ -219,10 +225,11 @@ function ProjectTwo() {
                 1.2GB/s
               </span>
             </div>
-          </div>
-          <button className="w-full border border-secondary/30 text-secondary font-mono text-xs py-3 hover:bg-secondary/10 transition-all flex justify-center items-center gap-2 rounded-lg">
-            <Network className="w-4 h-4" />
-            EXECUTE_TECHNICAL_DEEP_DIVE
+          </div> */}
+          <button onClick={() => window.open("https://101drivers.techbee.et/", "_blank")}
+          className="group flex items-center gap-4 text-primary font-mono text-xs hover:gap-6 transition-all">
+            LIVE{" "}
+            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
       </div>
@@ -233,12 +240,12 @@ function ProjectTwo() {
 /* ------------------------------------------------------------------ */
 /*  Project 3 — DeepSight Engine (full-width visual focus)             */
 /* ------------------------------------------------------------------ */
-function ProjectThree() {
+function Certification() {
   return (
     <section className="relative">
       <div className="flex items-center gap-4 mb-12">
         <span className="text-tertiary-container font-mono text-2xl font-semibold">
-          03
+          04
         </span>
         <div className="h-[1px] flex-grow bg-outline-variant" />
       </div>
@@ -300,6 +307,169 @@ function ProjectThree() {
   );
 }
 
+function ProjectThree() {
+  return (
+    <section className="relative">
+      <div className="ai-glow absolute -left-20 -top-20 w-96 h-96 opacity-50 -z-10" />
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
+        {/* Left: Technical Specs */}
+        <div className="lg:col-span-5 space-y-6">
+          <div className="flex items-center gap-4">
+            <span className="text-primary font-mono text-2xl font-semibold">
+              03
+            </span>
+            <div className="h-[1px] flex-grow bg-outline-variant" />
+          </div>
+          <h2 className="text-3xl font-semibold text-on-surface uppercase tracking-tight leading-snug">
+           European Union Deforestation Registry (EUDR) 
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {["React", "ArcGIS", "Node.js","Express", "MongoDB"].map((t) => (
+              <span
+                key={t}
+                className="technical-chip px-2 py-1 text-xs uppercase text-primary"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+          <div className="grid gap-4">
+          <p className="text-base text-on-surface-variant leading-relaxed">
+            EUDR stands for the European Union Deforestation Regulation. 
+            It aims to regulate Ethiopian coffee suppliers, cooperatives, and unions. 
+            The EU seeks to ensure that imported coffee is not grown on deforested land. 
+            To achieve this, the system uses geospatial data to track where the coffee is grown 
+            and monitors each step from the farmer to Europe, verifying whether the supplier meets 
+            their requirements.It is not deployed yet       
+             </p>
+           
+          </div>
+          
+          <button 
+            onClick={() => window.open("https://eudr-mu.vercel.app/", "_blank")}
+          className="group flex items-center gap-4 text-primary font-mono text-xs hover:gap-6 transition-all">
+            LIVE{" "}
+            <ArrowRight className="w-4 h-4" />
+          </button>
+        {/* </div> */}
+        </div>
+
+        {/* Right: Large Diagram */}
+        <div className="lg:col-span-7">
+          <div className="glass-card aspect-video relative group overflow-hidden border-primary/20">
+            <div
+              className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-[2s]"
+              style={{
+                backgroundImage:
+                  "url('/Eudr.jpg')",
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-tr from-surface to-transparent opacity-80" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// function ProjectFour() {
+//   return (
+//     <section className="relative">
+//       <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
+//         {/* Left: Large Diagram (Visual First on desktop) */}
+//         <div className="lg:col-span-7 order-2 lg:order-1">
+//           <div className="glass-card aspect-video relative group overflow-hidden border-secondary/20">
+//             {/* Background image with grayscale hover effect */}
+//             <img
+//               alt="Architecture diagram"
+//               src="/Eudr.jpg"
+//               className="absolute inset-0 w-full h-full object-cover transition-all duration-1000"
+//             />
+//             <div className="absolute inset-0 bg-gradient-to-tl from-surface to-transparent opacity-80" />
+//             <div className="absolute inset-0 p-6 flex flex-col items-center justify-center">
+//               <div className="w-full max-w-lg space-y-6">
+//                 {/* Top labels row */}
+//                 {/* <div className="flex justify-between text-xs font-mono text-secondary">
+//                   <span>CLIENT_LAYER</span>
+//                   <span>REST_GATEWAY</span>
+//                   <span>LOGIC_ENGINE</span>
+//                 </div> */}
+//                 {/* Central diagram: bordered container with line and dots */}
+//                 {/* <div className="h-24 border-x border-secondary/30 flex items-center justify-center">
+//                   <div className="w-[80%] h-[1px] bg-secondary/30 relative">
+//                     <div className="absolute -top-1 left-1/4 w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_#d0bcff]" />
+//                     <div className="absolute -top-1 left-2/3 w-2 h-2 rounded-full bg-secondary shadow-[0_0_10px_#d0bcff]" />
+//                   </div>
+//                 </div> */}
+//                 {/* Bottom label */}
+//                 {/* <div className="text-center">
+//                   <span className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest">
+//                     TRANSACTION_ORCHESTRATION_FLOW
+//                   </span>
+//                 </div> */}
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         {/* Right: Specs */}
+//         <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
+//           <div className="flex items-center gap-4">
+//             <span className="text-secondary font-mono text-2xl font-semibold">
+//               04
+//             </span>
+//             <div className="h-[1px] flex-grow bg-outline-variant" />
+//           </div>
+//           <h2 className="text-3xl font-semibold text-on-surface uppercase tracking-tight leading-snug">
+//             European Union Deforestation Registry (EUDR)
+//           </h2>
+//           <div className="flex flex-wrap gap-2">
+//             {["React", "ArcGIS", "Node.js","MongoDB","Express", "MongoDB", "Express"].map(
+//               (t) => (
+//                 <span
+//                   key={t}
+//                   className="technical-chip px-2 py-1 text-xs uppercase text-secondary"
+//                 >
+//                   {t}
+//                 </span>
+//               )
+//             )}
+//           </div>
+//           <p className="text-base text-on-surface-variant leading-relaxed">
+//             EUDR stands for the European Union Deforestation Regulation. 
+//             It aims to regulate Ethiopian coffee suppliers, cooperatives, and unions. 
+//             The EU seeks to ensure that imported coffee is not grown on deforested land. 
+//             To achieve this, the system uses geospatial data to track where the coffee is grown 
+//             and monitors each step from the farmer to Europe, verifying whether the supplier meets 
+//             their requirements.It is not deployed yet
+//           </p>
+//           {/* <div className="grid grid-cols-2 gap-4">
+//             <div className="glass-card p-4 rounded-lg">
+//               <span className="text-[10px] font-mono text-on-surface-variant block mb-1">
+//                 LATENCY_P99
+//               </span>
+//               <span className="text-2xl font-mono text-secondary font-semibold">
+//                 12.4ms
+//               </span>
+//             </div>
+//             <div className="glass-card p-4 rounded-lg">
+//               <span className="text-[10px] font-mono text-on-surface-variant block mb-1">
+//                 THROUGHPUT
+//               </span>
+//               <span className="text-2xl font-mono text-secondary font-semibold">
+//                 1.2GB/s
+//               </span>
+//             </div>
+//           </div>*/}
+//           <button className="text-secondary font-mono text-xs py-3 hover:cursor-pointer transition-all flex justify-center items-center gap-2 rounded-lg">
+//             <Network className="w-4 h-4" />
+//             navigate to it
+//           </button> 
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 /* ------------------------------------------------------------------ */
 /*  Projects wrapper                                                   */
 /* ------------------------------------------------------------------ */
@@ -309,6 +479,8 @@ export default function ProjectsSection() {
       <ProjectOne />
       <ProjectTwo />
       <ProjectThree />
+      {/* <ProjectFour/> */}
+      <Certification />
     </div>
   );
 }

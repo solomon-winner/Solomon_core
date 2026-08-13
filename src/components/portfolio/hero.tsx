@@ -17,15 +17,18 @@ export default function HeroSection() {
           SOLOMON  YALEW
         </h1>
         <p className="text-lg text-on-surface-variant mt-4 leading-relaxed">
-          Full-stack developer with hands-on experience in several impactful projects, including building an ERP system from scratch for the Ethiopian ecosystem, incorporating features from Odoo and Oracle to ensure flexibility. Experienced in React, Next.js, NestJS, and AWS.
+          Full-stack developer with hands-on experience in several impactful projects, 
+          including building an ERP system from scratch for the Ethiopian ecosystem, 
+          incorporating features from Odoo and Oracle to ensure flexibility. 
+          Experienced in Python, React, Next.js, NestJS, and AWS.
         </p>
       </div>
-      <div className="hidden lg:block text-right">
+      <div className="hidden lg:block text-right gap-2">
         <span className="font-mono text-xs text-on-surface-variant block">
-          SYSTEM_LOAD: 12%
+          "Whatever you do, work at it with all your heart, as working for the Lord, not for human masters."
         </span>
         <span className="font-mono text-xs text-on-surface-variant block">
-          ACTIVE_NODES: 1,422
+         Colossians 3:23
         </span>
       </div>
     </section>

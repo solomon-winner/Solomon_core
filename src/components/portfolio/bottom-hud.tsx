@@ -1,10 +1,10 @@
 "use client";
 
 const hudItems = [
-  { label: "Nucleus", section: "nucleus" },
+  // { label: "Nucleus", section: "nucleus" },
   { label: "Projects", section: "projects" },
-  { label: "Skills", section: "skills" },
-  { label: "System", section: "system" },
+  // { label: "Skills", section: "skills" },
+  { label: "Exprience", section: "system" },
 ];
 
 interface BottomHUDProps {
